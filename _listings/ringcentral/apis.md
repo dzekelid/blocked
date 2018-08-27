@@ -12,8 +12,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-deve
 x-kinRank: "7"
 x-alexaRank: "7180"
 tags: Blocked
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/apis.md
 specificationVersion: "0.14"
 apis:
@@ -38,6 +38,158 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidblockednumber-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidblockednumber-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Add Blocked Numbers
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidblockednumber-post
+  description: "Adds a new phone number to the blocked number list.\nApp Permission\nEditExtensions\nUser
+    Permission\nEditBlockedNumbers\nUsage Plan Group\nMedium\nError Codes\n\n \n  \n
+    \  HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [phoneNumber] value is invalid\n\n\n403\nCMN-401\nIn order to call this API endpoint,
+    application needs to have [EditExtensions] permission\n\n\n403\nCMN-408\nIn order
+    to call this API endpoint, user needs to have [EditBlockedNumbers] permission
+    for requested resource.\n\n\n404\nCMN-102\nResource for parameter [extensionId]
+    is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidblockednumber-post-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidblockednumberblockednumberid-get
+  description: "Returns specific information on blocked phone number(s) by their ID(s).
+    Batch request is supported.\nApp Permission\nReadAccounts\nUser Permission\nReadBlockedNumbers\nUsage
+    Plan Group\nLight\nError Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error
+    Message\n   \n \n\n403\nCMN-401\nIn order to call this API endpoint, application
+    needs to have [ReadAccounts] permission\n\n\n403\nCMN-408\nIn order to call this
+    API endpoint, user needs to have [ReadBlockedNumbers] permission for requested
+    resource.\n\n\n404\nCMN-102\nResource for parameter [accountId] is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidblockednumberblockednumberid-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Update Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidblockednumberblockednumberid-put
+  description: "Updates blocked number(s) by their ID(s). Currently only the name
+    can be updated. Batch request is supported.\nApp Permission\nEditExtensions\nUser
+    Permission\nEditBlockedNumbers\nUsage Plan Group\nMedium\nError Codes\n\n \n  \n
+    \  HTTP Code\n   Error Code\n   Error Message\n   \n \n\n400\nCMN-101\nParameter
+    [] value is invalid\n\n\n403\nCMN-401\nIn order to call this API endpoint, application
+    needs to have [EditExtensions] permission\n\n\n403\nCMN-408\nIn order to call
+    this API endpoint, user needs to have [EditBlockedNumbers] permission for requested
+    resource.\n\n\n404\nCMN-102\nResource for parameter [extensionId] is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidblockednumberblockednumberid-put-openapi.md
+- name: RingCentral Connect Platform API Explorer - Delete Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidblockednumberblockednumberid-delete
+  description: "Deletes a phone number from the blocked number list. Batch request
+    is supported.\nApp Permission\nEditExtensions\nUser Permission\nEditBlockedNumbers\nUsage
+    Plan Group\nMedium\nError Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error
+    Message\n   \n \n\n403\nCMN-401\nIn order to call this API endpoint, application
+    needs to have [EditExtensions] permission\n\n\n403\nCMN-408\nIn order to call
+    this API endpoint, user needs to have [EditBlockedNumbers] permission for requested
+    resource.\n\n\n404\nCMN-102\nResource for parameter [extensionId] is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidblockednumberblockednumberid-delete-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Blocked Numbers
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbers-get
+  description: "Returns the lists of blocked and allowed phone numbers.\nApp Permission\nReadAccounts\nUser
+    Permission\nReadBlockedNumbers\nUsage Plan Group\nLight\nError Codes\n\n \n  \n
+    \  HTTP Code\n   Error Code\n   Error Message\n   \n \n\n404\nCMN-102\nResource
+    for parameter [accountId] is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbers-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Add Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbers-post
+  description: |-
+    Updates either blocked or allowed phone number list with a new phone number.
+    App Permission
+    EditExtensions
+    User Permission
+    EditBlockedNumbers
+    Usage Plan Group
+    Medium
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbers-post-openapi.md
+- name: RingCentral Connect Platform API Explorer - Get Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-get
+  description: "Returns blocked or allowed phone number(s) by their ID(s). Batch request
+    is supported.\nApp Permission\nReadAccounts\nUser Permission\nReadBlockedNumbers\nUsage
+    Plan Group\nLight\nError Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error
+    Message\n   \n \n\n404\nCMN-102\nResource for parameter [accountId] is not found"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-get-openapi.md
+- name: RingCentral Connect Platform API Explorer - Delete Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-delete
+  description: |-
+    Deletes blocked or allowed phone number(s) by their ID(s). Batch request is supported.
+    App Permission
+    EditExtensions
+    User Permission
+    EditBlockedNumbers
+    Usage Plan Group
+    Medium
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-delete-openapi.md
+- name: RingCentral Connect Platform API Explorer - Update Blocked Number
+  x-api-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-put
+  description: |-
+    Updates blocked or allowed phone number(s) by their ID(s). Batch request is supported.
+    App Permission
+    EditExtensions
+    User Permission
+    EditBlockedNumbers
+    Usage Plan Group
+    Medium
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28867-developer-ringcentral-com.jpg
+  humanURL: http://www.ringcentral.com
+  baseURL: https://platform.ringcentral.com//
+  tags: Telecommunications, ISP, Voice, Video Conferencing, Webinars, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/blocked/master/_listings/ringcentral/restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-put-openapi.md
 x-common:
 - type: x-blog
   url: https://medium.com/ringcentral-developers

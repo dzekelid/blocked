@@ -1,9 +1,17 @@
+---
 swagger: "2.0"
 x-collection-name: RingCentral
-x-complete: 1
+x-complete: 0
 info:
-  title: RingCentral Connect Platform API Explorer
-  description: this-is-an-interactive-api-explorer-for-the-ringcentral-connect-platform--to-use-this-service-you-will-need-to-have-a-developer-account---links--a-hrefhttpsnetstorage-ringcentral-comdpwapiexplorerrcplatform-basic-ymlv20180514092722-target-blankringcentral-api-specaspannbspnbspopenapi-fka-swagger-formatnbspnbspnbspnbspspana-hrefhttpsgithub-comoaiopenapispecification-target-blanklearn-more-about-openapia
+  title: RingCentral Add Blocked Number
+  description: |-
+    Updates either blocked or allowed phone number list with a new phone number.
+    App Permission
+    EditExtensions
+    User Permission
+    EditBlockedNumbers
+    Usage Plan Group
+    Medium
   version: 1.0.0
 host: platform.ringcentral.com
 basePath: /
@@ -220,76 +228,17 @@ paths:
       tags:
       - Blocked
       - Number
-  /restapi/v1.0/account/{accountId}/extension/{extensionId}/caller-blocking/phone-numbers/{blockedNumberId}:
-    get:
-      summary: Get Blocked Number
-      description: "Returns blocked or allowed phone number(s) by their ID(s). Batch
-        request is supported.\nApp Permission\nReadAccounts\nUser Permission\nReadBlockedNumbers\nUsage
-        Plan Group\nLight\nError Codes\n\n \n  \n   HTTP Code\n   Error Code\n   Error
-        Message\n   \n \n\n404\nCMN-102\nResource for parameter [accountId] is not
-        found"
-      operationId: listBlockedAllowedPhoneNumber
-      x-api-path-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-get
-      parameters:
-      - in: path
-        name: accountId
-      - in: path
-        name: blockedNumberId
-      - in: path
-        name: extensionId
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blocked
-      - Number
-    delete:
-      summary: Delete Blocked Number
-      description: |-
-        Deletes blocked or allowed phone number(s) by their ID(s). Batch request is supported.
-        App Permission
-        EditExtensions
-        User Permission
-        EditBlockedNumbers
-        Usage Plan Group
-        Medium
-      operationId: deleteBlockedAllowedPhoneNumber
-      x-api-path-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-delete
-      parameters:
-      - in: path
-        name: accountId
-      - in: path
-        name: blockedNumberId
-      - in: path
-        name: extensionId
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blocked
-      - Number
-    put:
-      summary: Update Blocked Number
-      description: |-
-        Updates blocked or allowed phone number(s) by their ID(s). Batch request is supported.
-        App Permission
-        EditExtensions
-        User Permission
-        EditBlockedNumbers
-        Usage Plan Group
-        Medium
-      operationId: updateBlockedAllowedPhoneNumber
-      x-api-path-slug: restapiv1-0accountaccountidextensionextensionidcallerblockingphonenumbersblockednumberid-put
-      parameters:
-      - in: path
-        name: accountId
-      - in: path
-        name: blockedNumberId
-      - in: path
-        name: extensionId
-      responses:
-        200:
-          description: OK
-      tags:
-      - Blocked
-      - Number
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
